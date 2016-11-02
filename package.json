@@ -1,0 +1,47 @@
+{
+  "name": "get-lodash-aliases",
+  "version": "1.0.0",
+  "description": "Get alias names of Lodash methods from the latest API document",
+  "repository": "shinnn/get-lodash-aliases",
+  "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+  "scripts": {
+    "pretest": "eslint --fix --format=codeframe index.js test.js",
+    "test": "istanbul cover --print=both test.js"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "lodash",
+    "get",
+    "fetch",
+    "alias",
+    "aliases",
+    "combination",
+    "name",
+    "document",
+    "api",
+    "method",
+    "methods",
+    "promise",
+    "promises",
+    "asynchronous"
+  ],
+  "dependencies": {
+    "gh-get": "^1.0.1",
+    "is-obj": "^1.0.1",
+    "rehype-parse": "^2.0.1",
+    "remark-parse": "^2.2.0",
+    "unified": "^5.1.0"
+  },
+  "devDependencies": {
+    "@shinnn/eslint-config-node": "^3.0.0",
+    "eslint": "^3.9.1",
+    "istanbul": "^0.4.5",
+    "tape": "^4.6.2"
+  },
+  "eslintConfig": {
+    "extends": "@shinnn/node"
+  }
+}
